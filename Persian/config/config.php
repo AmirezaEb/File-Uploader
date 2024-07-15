@@ -21,17 +21,17 @@ $media = (object)[
 $emailServer = (object)[
     'host' => 'mail.heroexpert.ir',
     'userName' => 'info@heroexpert.ir',
-    'passWord' => 'iV8#hX0^cU1@xJ9&',
-    'port' => '587',
-    'secure' => 'SSL'
+    'passWord' => '-----',
+    'port' => '-----',
+    'secure' => 'TLS'
     ];
 
 #---# DataBase Config #---#
 
 $dataBase = (object)[
-    'name' => 'heroex_test', #DataBase Name
-    'userName' => 'heroex_test', #DataBase Username
-    'passWord' => 'h9g@ft9u9h545', #DataBase PassWord
+    'name' => 'uploader', #DataBase Name
+    'userName' => 'root', #DataBase Username
+    'passWord' => '', #DataBase PassWord
     ];
 
 try {

@@ -29,7 +29,7 @@ $emailServer = (object)[
 #---# DataBase Config #---#
 
 $dataBase = (object)[
-    'name' => 'HeroExpert', #DataBase Name
+    'name' => 'uploader', #DataBase Name
     'userName' => 'root', #DataBase Username
     'passWord' => '', #DataBase PassWord
     ];
