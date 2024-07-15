@@ -1,5 +1,10 @@
 <?php require 'config/init.php'; ?>
 
+<!--* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,3 +55,8 @@ if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
     unset($_SESSION['message']);
 }
 ?>
+
+<!--* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*-->

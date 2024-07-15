@@ -1,5 +1,10 @@
 <?php
 
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
 require '../config/init.php';
 
 if (isset($_POST['signUp']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -38,3 +43,10 @@ if (isset($_POST['signUp']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
         setErrorAndRedirect($e->getMessage(), 'signUp');
     }
 }
+
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
+?>

@@ -2,13 +2,16 @@
 
 require "config/init.php";
 
-
 if (isset($_GET['Message']) && $_GET['Message'] == 'LogOut') {
     setcookie("Logined", "", time() - 300, "/");
-    setMessageAndRedirect('','./');
+    setMessageAndRedirect('', './');
 }
-
 ?>
+
+<!--* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -80,6 +83,7 @@ if (isset($_GET['Message']) && $_GET['Message'] == 'LogOut') {
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/clipboard.min.js"></script>
 <script src="assets/js/main.js"></script>
+
 </html>
 
 <?php
@@ -105,3 +109,8 @@ if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
     unset($_SESSION['message']);
 }
 ?>
+
+<!--* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*-->

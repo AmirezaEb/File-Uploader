@@ -1,3 +1,8 @@
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/
+
 html {
     height: 100%;
 }
@@ -172,6 +177,11 @@ body {
     }
 }
 
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/
+
 .login-box button span:nth-child(2) {
     top: -100%;
     right: 0;
@@ -239,11 +249,12 @@ body {
 /* Start responsive */
 
 @media screen and (max-width: 768px) {
+
     .eye-icon,
     .eye-slash-icon {
-      font-size: 2.5vw;
+        font-size: 2.5vw;
     }
-  }
+}
 
 @media screen and (max-width: 576px) {
     .login-box {
@@ -260,15 +271,23 @@ body {
     }
 
     .alert-validate::before {
-        font-size: .65rem!important;
-        top: 15%!important;
-      }
-      .alert-validate::after {
-        top: 17%!important;
-      }
+        font-size: .65rem !important;
+        top: 15% !important;
+    }
+
+    .alert-validate::after {
+        top: 17% !important;
+    }
 
     .eye-icon,
     .eye-slash-icon {
         font-size: 3.7vw;
     }
 }
+
+/* 
+
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+
+*/

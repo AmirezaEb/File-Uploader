@@ -48,19 +48,25 @@ if (isset($_POST['submit']) && $_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['s
 
         # Check If Upload Ok is Set To 0 By An Error
         if ($uploadOk == 0) {
-            setErrorAndRedirect('با عرض پوزش، هنگام آپلود فایل شما خطایی رخ داد!','./');
+            setErrorAndRedirect('با عرض پوزش، هنگام آپلود فایل شما خطایی رخ داد!', './');
 
             # If Everything Is Ok, Try To Upload File
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
                 $cookieValue = explode('-.-', encodeORdecode($_COOKIE['Logined'])['deCode']);
                 seveFile($cookieValue[1], BASE_URL . 'uploads/' . $fileName, $fileName);
-                setMessageAndRedirect('آپلود با موفقیت انجام شد!','./');
+                setMessageAndRedirect('آپلود با موفقیت انجام شد!', './');
             } else {
-                setErrorAndRedirect('با عرض پوزش، هنگام آپلود فایل شما خطایی رخ داد!','./');
+                setErrorAndRedirect('با عرض پوزش، هنگام آپلود فایل شما خطایی رخ داد!', './');
             }
         }
     } catch (Exception $e) {
-        setErrorAndRedirect('با عرض پوزش، هنگام آپلود فایل شما خطایی رخ داد!','./');
+        setErrorAndRedirect('با عرض پوزش، هنگام آپلود فایل شما خطایی رخ داد!', './');
     }
 }
+
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+?>

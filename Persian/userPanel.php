@@ -34,6 +34,11 @@ $spans = ['D','e','v','e','l','o','p','e','d',' ','B','y',' ','H','e','r','o','E
 <!DOCTYPE html>
 <html lang="fa">
 
+<!--
+-*- Developed by Hero Expert 
+-*- Telegram channel: @HeroExpert_ir
+*-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -147,5 +152,8 @@ $spans = ['D','e','v','e','l','o','p','e','d',' ','B','y',' ','H','e','r','o','E
     <script src="assets/js/userPanel.js"></script>
 
 </body>
-
+<!--
+-*- Developed by Hero Expert 
+-*- Telegram channel: @HeroExpert_ir
+*-->
 </html>

@@ -4,8 +4,13 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
 # Redirect The User To Another Page
-function redirect(string $Url) :void
+function redirect(string $Url): void
 {
     if (!headers_sent()) {
         header("Location: $Url");
@@ -31,7 +36,7 @@ function setErrorAndRedirect(string $message, string $target): void
 }
 
 # Create A New Random Name For The Files
-function fileNameCreate() :string
+function fileNameCreate(): string
 {
     $length = rand(5, 11);
     $characters = 'aA0bBcC1dDeE2fFgG3hHiI4jJkK5lLmM6nNoO7pPqQ8rRsS9tTuUvVwWxXyYzZ';
@@ -43,8 +48,14 @@ function fileNameCreate() :string
     return $randomString;
 }
 
+
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
 # Inserting Information Into The DataBase
-function seveFile(int $user_id,string $url,string $name) :bool
+function seveFile(int $user_id, string $url, string $name): bool
 {
     global $connect;
     $sql = "INSERT INTO file_upload (user_id,url,name) VALUES (:user_id,:url,:name);";
@@ -128,6 +139,13 @@ function checkPassword(string $passWord): int
     }
     return 0;
 }
+
+
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
 
 # Find And Check Email And Password
 function receiveUser(string $key, string $passWord): bool
@@ -413,3 +431,10 @@ function alarm(string $mode, string $message): string
     </script>";
     return $alarm;
 }
+
+
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+?>

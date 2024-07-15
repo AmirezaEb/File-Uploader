@@ -1,5 +1,10 @@
 <?php
 
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
 require '../config/init.php';
 
 
@@ -23,3 +28,9 @@ if (isset($_POST['forgetPass']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
         setErrorAndRedirect('The desired email was not found. Please register','forgetPassword');
     }
 }
+
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+?>

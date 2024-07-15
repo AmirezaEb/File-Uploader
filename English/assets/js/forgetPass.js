@@ -1,3 +1,8 @@
+/* 
+* Developed by Hero Expert 
+* Telegram channel: @HeroExpert_ir
+*/
+
 let $ = document
 
 // const confirmBtn = $.querySelector('.forget-btn');
@@ -9,7 +14,7 @@ const usernameInput = $.querySelector('.username-input');
 confirmBtn.addEventListener('click', event => {
     const emailRegex = /^\w+([\.-]?\w)*@\w+([\.-]?\w)*(\.\w{2,3})+$/;
     let emailTrust = emailRegex.test(usernameInput.value)
-    
+
     if (usernameInput.value.length < 1 || !emailTrust) {
         event.preventDefault()
         usernameDiv.classList.add('alert-validate')
@@ -30,3 +35,8 @@ usernameInput.addEventListener('keyup', (e) => {
         emailDiv.classList.remove('alert-validate')
     }
 })
+
+/* 
+* Developed by Hero Expert 
+* Telegram channel: @HeroExpert_ir
+*/

@@ -2,6 +2,11 @@
 
 require 'config/init.php';
 
+/* 
+* Developed by Hero Expert 
+* Telegram channel: @HeroExpert_ir
+*/
+
 if (isset($_COOKIE['Logined'])) {
     $cookieExplode = explode('-.-', encodeORdecode($_COOKIE['Logined'])['deCode']);
     $chekUser = checkUserName($cookieExplode[0]);
@@ -149,3 +154,8 @@ $spans = ['D','e','v','e','l','o','p','e','d',' ','B','y',' ','H','e','r','o','E
 </body>
 
 </html>
+
+<!--* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*-->

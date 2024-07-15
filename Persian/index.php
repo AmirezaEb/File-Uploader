@@ -2,13 +2,16 @@
 
 require "config/init.php";
 
-
 if (isset($_GET['Message']) && $_GET['Message'] == 'LogOut') {
     setcookie("Logined", "", time() - 300, "/");
-    setMessageAndRedirect('','./');
+    setMessageAndRedirect('', './');
 }
-
 ?>
+
+<!--
+-*- Developed by Hero Expert 
+-*- Telegram channel: @HeroExpert_ir
+*-->
 
 <!DOCTYPE html>
 <html lang="fa">
@@ -55,7 +58,6 @@ if (isset($_GET['Message']) && $_GET['Message'] == 'LogOut') {
                 </div>
             </div>
         </div>
-
         <form action="controllers/upload.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="fileToUpload" id="fileToUpload">
             <i class="fa-solid fa-check check-icon"></i>
@@ -80,12 +82,12 @@ if (isset($_GET['Message']) && $_GET['Message'] == 'LogOut') {
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/clipboard.min.js"></script>
 <script src="assets/js/main.js"></script>
+
 </html>
 
 <?php
 
 # Error Handler
-
 if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
     echo alarm('error', $_SESSION['error']);
     unset($_SESSION['error']);
@@ -94,3 +96,8 @@ if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
     unset($_SESSION['message']);
 }
 ?>
+
+<!--
+-*- Developed by Hero Expert 
+-*- Telegram channel: @HeroExpert_ir
+*-->

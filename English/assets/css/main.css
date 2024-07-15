@@ -1,3 +1,8 @@
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/
+
 body {
   position: relative;
   z-index: -1;
@@ -10,115 +15,120 @@ body {
 }
 
 .loading-wrapper {
-    position: fixed;
-    direction: ltr;
-    background-color: #10032e;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    opacity: 1;
-    visibility: visible;
-    transition: all 200ms ease-in-out;
+  position: fixed;
+  direction: ltr;
+  background-color: #10032e;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 200ms ease-in-out;
 }
 
 .loading-wrapper-off {
-    visibility: hidden!important;
-    opacity: 0!important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
 
 .loading-content {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 170px;
-    height: 170px;
-    margin: -85px 0 0 -85px;
-    border: 3px solid #F00;
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+  border: 3px solid #F00;
 }
 
 .loading-content:after {
-    content: "";
-    position: absolute;
-    border: 3px solid #0F0;
-    left: 15px;
-    right: 15px;
-    top: 15px;
-    bottom: 15px;
+  content: "";
+  position: absolute;
+  border: 3px solid #0F0;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
 }
 
 .loading-content:before {
-    content: "";
-    position: absolute;
-    border: 3px solid #00F;
-    left: 5px;
-    right: 5px;
-    top: 5px;
-    bottom: 5px;
+  content: "";
+  position: absolute;
+  border: 3px solid #00F;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
 }
 
 .loading-content {
-    border: 3px solid transparent;
-    border-top-color: #4D658D;
-    border-bottom-color: #4D658D;
-    border-radius: 50%;
-    -webkit-animation: loader 2s linear infinite;
-    -moz-animation: loader 2s linear infinite;
-    -o-animation: loader 2s linear infinite;
-    animation: loader 2s linear infinite;
+  border: 3px solid transparent;
+  border-top-color: #4D658D;
+  border-bottom-color: #4D658D;
+  border-radius: 50%;
+  -webkit-animation: loader 2s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+  animation: loader 2s linear infinite;
 }
 
 .loading-content:before {
-    border: 3px solid transparent;
-    border-top-color: #D4CC6A;
-    border-bottom-color: #D4CC6A;
-    border-radius: 50%;
-    -webkit-animation: loader 3s linear infinite;
-    -moz-animation: loader 2s linear infinite;
-    -o-animation: loader 2s linear infinite;
-    animation: loader 3s linear infinite;
+  border: 3px solid transparent;
+  border-top-color: #D4CC6A;
+  border-bottom-color: #D4CC6A;
+  border-radius: 50%;
+  -webkit-animation: loader 3s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+  animation: loader 3s linear infinite;
 }
 
 .loading-content:after {
-    border: 3px solid transparent;
-    border-top-color: #84417C;
-    border-bottom-color: #84417C;
-    border-radius: 50%;
-    -webkit-animation: loader 1.5s linear infinite;
-    animation: loader 1.5s linear infinite;
-    -moz-animation: loader 2s linear infinite;
-    -o-animation: loader 2s linear infinite;
+  border: 3px solid transparent;
+  border-top-color: #84417C;
+  border-bottom-color: #84417C;
+  border-radius: 50%;
+  -webkit-animation: loader 1.5s linear infinite;
+  animation: loader 1.5s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
 }
 
 @-webkit-keyframes loaders {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes loader {
-    0% {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
 
-    100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
+
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/
 
 .shadow {
   background: url("../images/background.webp") no-repeat;
@@ -155,7 +165,10 @@ body {
 .header:hover {
   background-color: #1e1b2a;
 }
-.header:hover .signUp, .header:hover .header-text, .header:hover .username {
+
+.header:hover .signUp,
+.header:hover .header-text,
+.header:hover .username {
   color: #fff;
 }
 
@@ -192,7 +205,8 @@ body {
   transition: all 200ms ease-in;
 }
 
-.header:hover .signUp, .header:hover .user-panel {
+.header:hover .signUp,
+.header:hover .user-panel {
   background-color: #270773;
 }
 
@@ -216,12 +230,12 @@ body {
 
 .signUp:hover,
 .user-panel:hover {
-  background-color: #3e0ab7!important;
+  background-color: #3e0ab7 !important;
   color: #fff;
 }
 
 .login:hover {
-  background-color: #464357!important;
+  background-color: #464357 !important;
   color: #fff;
 }
 
@@ -245,24 +259,27 @@ body {
   max-width: 40%;
   margin-left: 30%;
   text-align: center;
-  border: 5px #a786f2!important;
-  background-color: #b89ef5!important;
+  border: 5px #a786f2 !important;
+  background-color: #b89ef5 !important;
   margin-top: 75px;
   border-radius: 15px;
 }
+
 .Url {
   color: #3e0ab7;
   text-decoration: none;
 }
+
 .copyBtn {
   color: #fff;
   margin-left: .5rem;
-  background-color: #3e0ab7!important;
-  transition: all 200ms ease-in!important;
+  background-color: #3e0ab7 !important;
+  transition: all 200ms ease-in !important;
 }
+
 .copyBtn:hover {
-  color: #fff!important;
-  background-color: #713dea!important;
+  color: #fff !important;
+  background-color: #713dea !important;
 }
 
 .custom-popover {
@@ -292,6 +309,11 @@ form:hover {
   border: 3px dashed #3e0ab7;
   color: #3e0ab7;
 }
+
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/
 
 .check-icon {
   display: none;
@@ -324,12 +346,13 @@ form input {
   outline: none;
   opacity: 0;
 }
+
 form input:hover {
   cursor: pointer;
 }
 
-.LH-custom{
-  line-height: 200px!important;
+.LH-custom {
+  line-height: 200px !important;
 }
 
 #upload-btn {
@@ -381,18 +404,25 @@ form input:hover {
 .delete-icon {
   font-size: 1.2vw;
 }
+
 .delete-icon:hover {
   cursor: pointer;
 }
 
-.file-details-name, .file-details-size {
+.file-details-name,
+.file-details-size {
   margin: 0 .1rem;
 }
 
-@media screen and (max-width: 768px){
-  .header-text, .button, form p, #upload-btn {
-    font-size: 2vw!important;
+@media screen and (max-width: 768px) {
+
+  .header-text,
+  .button,
+  form p,
+  #upload-btn {
+    font-size: 2vw !important;
   }
+
   form {
     top: 35%;
     margin-left: -200px;
@@ -401,18 +431,33 @@ form input:hover {
   }
 }
 
-@media screen and (max-width: 576px){
-  .header-text, .button, form p, #upload-btn, .file-details-size, .file-details-name-link {
-    font-size: 2.5vw!important;
+@media screen and (max-width: 576px) {
+
+  .header-text,
+  .button,
+  form p,
+  #upload-btn,
+  .file-details-size,
+  .file-details-name-link {
+    font-size: 2.5vw !important;
   }
+
   form {
     margin-left: -150px;
     width: 300px;
   }
+
   #upload-btn {
     left: 30%;
   }
-  .delete-icon, .file-details-icon {
-      font-size: 3vw!important;
+
+  .delete-icon,
+  .file-details-icon {
+    font-size: 3vw !important;
   }
 }
+
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/

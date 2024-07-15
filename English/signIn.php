@@ -1,6 +1,9 @@
-<?php
-require 'config/init.php';
-?>
+<?php require 'config/init.php'; ?>
+
+<!--* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -78,3 +81,8 @@ if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
 }
 
 ?>
+
+<!--* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*-->

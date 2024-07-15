@@ -1,3 +1,8 @@
+/* 
+* Developed by Hero Expert 
+* Telegram channel: @HeroExpert_ir
+*/
+
 let $ = document
 
 const confirmBtn = $.querySelector('.signIn-btn');
@@ -64,3 +69,8 @@ window.addEventListener('click', event => {
         passwordInput.setAttribute('type', 'text')
     }
 })
+
+/* 
+* Developed by Hero Expert 
+* Telegram channel: @HeroExpert_ir
+*/

@@ -1,5 +1,10 @@
 <?php
 
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
 require '../config/init.php';
 
 # Check If Image File Is A Actual Image Or Fake Image
@@ -48,19 +53,26 @@ if (isset($_POST['submit']) && $_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['s
 
         # Check If Upload Ok is Set To 0 By An Error
         if ($uploadOk == 0) {
-            setErrorAndRedirect('Sorry, there was an error uploading your file!','./');
+            setErrorAndRedirect('Sorry, there was an error uploading your file!', './');
 
             # If Everything Is Ok, Try To Upload File
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
                 $cookieValue = explode('-.-', encodeORdecode($_COOKIE['Logined'])['deCode']);
                 seveFile($cookieValue[1], BASE_URL . 'uploads/' . $fileName, $fileName);
-                setMessageAndRedirect('The upload was successful!','./');
+                setMessageAndRedirect('The upload was successful!', './');
             } else {
-                setErrorAndRedirect('Sorry, there was an error uploading your file!','./');
+                setErrorAndRedirect('Sorry, there was an error uploading your file!', './');
             }
         }
     } catch (Exception $e) {
-        setErrorAndRedirect('Sorry, there was an error uploading your file!','./');
+        setErrorAndRedirect('Sorry, there was an error uploading your file!', './');
     }
 }
+
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
+?>

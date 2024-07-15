@@ -6,6 +6,11 @@
 -- Generation Time: Jul 15, 2024 at 04:27 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
+ 
+-- * Developed by Hero Expert 
+-- * Telegram channel: @HeroExpert_ir
+
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;

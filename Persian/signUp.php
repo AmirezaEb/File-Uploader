@@ -1,6 +1,4 @@
-<?php
-require 'config/init.php';
-?>
+<?php require 'config/init.php'; ?>
 
 <!DOCTYPE html>
 <html lang="fa">
@@ -67,6 +65,7 @@ require 'config/init.php';
 
 <?php
 
+# Error Handler
 if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
   echo alarm('error', $_SESSION['error']);
   unset($_SESSION['error']);
@@ -76,3 +75,7 @@ if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
 }
 
 ?>
+<!--
+-*- Developed by Hero Expert 
+-*- Telegram channel: @HeroExpert_ir
+*-->

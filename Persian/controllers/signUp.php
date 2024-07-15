@@ -2,7 +2,12 @@
 
 require '../config/init.php';
 
-if (isset($_POST['signUp']) && $_SERVER['REQUEST_METHOD'] == 'POST' ) {
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+
+if (isset($_POST['signUp']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         # Params and CheckParams
         $userName = trim(strip_tags($_POST['username']));
@@ -32,9 +37,15 @@ if (isset($_POST['signUp']) && $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             # Successful User SignIn Or Set Cookie
             $cookieValues = encodeORdecode($userName . '-.-' . $addUser)['enCode'];
             setcookie('Logined', $cookieValues, time() + (86400), "/"); // 86400 = 1 Day
-            setMessageAndRedirect('شما با موفقیت وارد شدید!','./');
+            setMessageAndRedirect('شما با موفقیت وارد شدید!', './');
         }
     } catch (Exception $e) {
-        setErrorAndRedirect($e->getMessage(),'signUp');
+        setErrorAndRedirect($e->getMessage(), 'signUp');
     }
 }
+
+/* 
+ * Developed by Hero Expert 
+ * Telegram channel: @HeroExpert_ir
+*/
+?>

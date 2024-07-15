@@ -1,7 +1,12 @@
-<?php require 'config/init.php';?>
+<?php require 'config/init.php'; ?>
 
 <!DOCTYPE html>
 <html lang="fa">
+
+<!--
+-*- Developed by Hero Expert 
+-*- Telegram channel: @HeroExpert_ir
+*-->
 
 <head>
     <meta charset="UTF-8">
@@ -27,7 +32,6 @@
                     ورود با ایمیل یا نام کاربری
                 </a>
             </div>
-            <!-- class="forget-btn" -->
             <button class="forget-btn" type="submit" name="forgetPass">
                 <span></span>
                 <span></span>
@@ -40,8 +44,10 @@
     </div>
     <script src="assets/js/forgetPass.js"></script>
 </body>
+
 </html>
 <?php
+# Error Handler
 if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
     echo alarm('error', $_SESSION['error']);
     unset($_SESSION['error']);
@@ -50,3 +56,7 @@ if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
     unset($_SESSION['message']);
 }
 ?>
+<!--
+-*- Developed by Hero Expert 
+-*- Telegram channel: @HeroExpert_ir
+*-->

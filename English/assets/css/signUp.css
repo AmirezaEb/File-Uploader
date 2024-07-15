@@ -1,9 +1,14 @@
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/
+
 html {
   height: 100%;
 }
 
 * {
-  font-family: 'Tough Love', sans-serif!important;
+  font-family: 'Tough Love', sans-serif !important;
 }
 
 body {
@@ -132,6 +137,11 @@ body {
   margin: 0 !important;
   color: #b89bf5;
 }
+
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/
 
 .eye-icon,
 .eye-slash-icon {
@@ -271,6 +281,7 @@ body {
 /* Start responsive */
 
 @media screen and (max-width: 768px) {
+
   .eye-icon,
   .eye-slash-icon {
     font-size: 2.5vw;
@@ -305,3 +316,8 @@ body {
     font-size: 3.7vw;
   }
 }
+
+/* 
+Developed by Hero Expert 
+Telegram channel: @HeroExpert_ir
+*/
