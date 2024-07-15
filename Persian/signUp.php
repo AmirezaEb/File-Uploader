@@ -1,31 +1,35 @@
+<?php
+require 'config/init.php';
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link href="https://fonts.cdnfonts.com/css/tough-love" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/iranyekan">
   <link rel="stylesheet" href="assets/css/signUp.css">
-  <title>Sign Up</title>
+  <title>ثبت نام</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.11.0/sweetalert2.all.js"></script>
 </head>
 
 <body>
   <div class="login-box">
-    <h2>Sign Up</h2>
-    <form action="#" method="post">
-      <div class="user-box username-input-div" data-validator="Letters a-z Are Allowed">
+    <h2>ثبت نام</h2>
+    <form action="controllers/signUp" method="post">
+      <div class="user-box username-input-div" data-validator="فقط حروف a-z مجاز هستند">
         <input class="username-input" id="username-input" type="text" name="username">
-        <label>Username</label>
+        <label>نام کاربری</label>
       </div>
-      <div class="user-box email-input-div" data-validator="Please Enter a Valid Email">
+      <div class="user-box email-input-div" data-validator="لطفا ایمیل معتبر وارد کنید">
         <input class="email-input" id="email-input" type="text" name="email">
-        <label>Email</label>
+        <label>ایمیل</label>
       </div>
-      <div class="user-box password-input-div" data-validator="Please Enter Your Password">
+      <div class="user-box password-input-div" data-validator="لطفا رمز عبور را وارد کنید">
         <input class="password-input" id="password-input" type="password" name="password">
-        <label>Password</label>
+        <label>رمز عبور</label>
         <div class="icons d-none">
           <p class="eye-icon-container">
             <i id="eye-icon" class="fa-solid fa-eye eye-icon"></i>
@@ -36,8 +40,8 @@
         </div>
       </div>
       <div class="user-box">
-        <a class="Login-text" href="#">
-          Login with username or email
+        <a class="Login-text" href="signIn">
+          ورود با نام کاربری یا ایمیل
         </a>
       </div>
       <!--  -->
@@ -46,7 +50,7 @@
         <span></span>
         <span></span>
         <span></span>
-        Sign Up
+        ثبت نام
       </button>
     </form>
   </div>
@@ -60,3 +64,15 @@
 </body>
 
 </html>
+
+<?php
+
+if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
+  echo alarm('error', $_SESSION['error']);
+  unset($_SESSION['error']);
+} elseif (isset($_SESSION['message']) && !empty($_SESSION['message'])) {
+  echo alarm('success', $_SESSION['message']);
+  unset($_SESSION['message']);
+}
+
+?>

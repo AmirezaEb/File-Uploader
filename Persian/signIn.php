@@ -1,3 +1,7 @@
+<?php
+require 'config/init.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fa">
 
@@ -14,7 +18,7 @@
 <body>
     <div class="login-box">
         <h2>ورود</h2>
-        <form action="#" method="post">
+        <form action="controllers/signIn" method="post">
             <div class="user-box username-input-div" data-validator="حروف a-z مجاز است">
                 <input class="username-input" type="text" name="key">
                 <label>نام کاربری | ایمیل</label>
@@ -32,7 +36,7 @@
                 </div>
             </div>
             <div class="user-box">
-                <a class="signUp-text" href="#">
+                <a class="signUp-text" href="signUp">
                     ثبت نام
                 </a>
             </div>
@@ -44,7 +48,7 @@
                 ورود
             </button>
             <div class="user-box">
-                <a class="forget-link" href="#">
+                <a class="forget-link" href="forgetPassword">
                     رمز خود را فراموش کردید ؟
                 </a>
             </div>
@@ -60,3 +64,17 @@
 </body>
 
 </html>
+
+<?php
+
+# Error Handler
+
+if (isset($_SESSION['error']) && !empty($_SESSION['error'])) {
+    echo alarm('error', $_SESSION['error']);
+    unset($_SESSION['error']);
+} elseif (isset($_SESSION['message']) && !empty($_SESSION['message'])) {
+    echo alarm('success', $_SESSION['message']);
+    unset($_SESSION['message']);
+}
+
+?>
