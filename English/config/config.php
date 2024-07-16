@@ -7,9 +7,9 @@
 
 #---# Upload Config #---#
 
-const AllowedFormat = ['rar', 'png', 'jpeg', 'mp3', 'zip', 'mp4', 'gif']; #Allowed File Upload Format
+const AllowedFormat = ['rar', 'png', 'jpeg', 'mp3', 'zip', 'mp4']; #Allowed File Upload Format
 const Limit = 20000000; #Maximum Upload Size (By Byte) 20000000 = 20MB
-const BASE_URL = 'http://localhost/Uploader/English/';
+const BASE_URL = 'http://localhost/File-Uploader/English/';
 const BASE_PATH = __DIR__ . '/../';
 
 #---# Social Media #---#
